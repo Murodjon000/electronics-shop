@@ -1,0 +1,11 @@
+.bg-custom-dark {
+  background-color: var(--dark-black);
+}
+
+.bg-custom-pink {
+  background-color: var(--dark-pink);
+}
+
+.bg-custom-gray {
+  background-color: var(--gray-medium);
+}

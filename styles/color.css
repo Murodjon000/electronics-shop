@@ -1,0 +1,11 @@
+.text-pink {
+  color: var(--dark-pink);
+}
+
+.text-black {
+  color: var(--dark-black);
+}
+
+.text-gray {
+  color: var(--gray-medium);
+}

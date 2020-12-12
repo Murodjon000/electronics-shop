@@ -1,0 +1,13 @@
+.px-1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.pt-5 {
+  padding-top: 20px;
+}

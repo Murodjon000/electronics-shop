@@ -1,0 +1,11 @@
+.text-md {
+  font-size: 20px;
+}
+
+.text-white {
+  color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
