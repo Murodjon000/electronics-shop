@@ -5,6 +5,7 @@
 .icon {
   font-size: 1.5rem;
   padding-left: 5px;
+  font-weight: 700;
 }
 
 .icon-head {
@@ -41,14 +42,24 @@
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 528px) {
+  .sm\:icon-sm {
+    font-size: 16px;
+  }
+  .sm\:icon__link-sm {
+    font-size: 0.7rem;
+    padding-right: 2px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .md\:justify-center {
     justify-content: center;
   }
 
-  .md\:px-4 {
-    padding-left: 16px;
-    padding-right: 16px;
+  .md\:px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .md\:px-5 {

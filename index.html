@@ -24,39 +24,65 @@
       <nav
         class="flex md:justify-between md:justify-center align-center header__container px-2"
       >
-        <div class="icon flex align-center md:px-4 lg:px-6">
+        <div class="icon flex align-center sm:icon-sm md:px-3 lg:px-6">
           <i class="text-pink icon-head fab fa-battle-net"></i>
           <h2 class="text-white uppercase">Zattix</h2>
         </div>
-        <div class="flex align-center md:px-4 lg:px-6">
-          <div class="links md:px-4 lg:px-6 text-gray text-md md:px-2">
-            <i class="icon__link fas fa-home"></i>
+        <div class="flex align-center md:px-3 lg:px-6">
+          <div class="links md:px-3 lg:px-6 text-gray text-md md:px-2">
+            <i class="icon__link sm:icon__link-sm fas fa-home"></i>
             <a href="#" class="text-gray">Home</a>
           </div>
-          <div class="links md:px-4 lg:px-6 text-gray text-md md:px-2">
-            <i class="icon__link fas fa-border-style"></i>
+          <div class="links md:px-3 lg:px-6 text-gray text-md md:px-2">
+            <i class="icon__link sm:icon__link-sm fas fa-border-style"></i>
             <a href="#" class="text-gray">Collections</a>
           </div>
 
-          <div class="links md:px-4 lg:px-6 text-gray text-md md:px-2">
-            <i class="icon__link fas fa-shopping-cart"></i>
+          <div class="links md:px-3 lg:px-6 text-gray text-md md:px-2">
+            <i class="icon__link sm:icon__link-sm fas fa-shopping-cart"></i>
             <a href="#" class="text-gray">Purchase List</a>
           </div>
-          <div class="button md:px-4 lg:px-6 md:hidden">
+          <div class="button md:px-3 lg:px-6 md:hidden">
             <button type="button">Post An Add</button>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="search__box bg-custom-pink">
+      <div class="search__box bg-custom-pink md:hidden">
         <div
-          class="search__info pt-5 flex flex-column align-center justify-center"
+          class="search__info text-white flex flex-column align-center justify-center"
         >
-          <h1>Zattix</h1>
+          <h1 class="uppercase">Zattix</h1>
           <p>Buying And Selling Couldn`t be Simpler than this!</p>
         </div>
-        <div class="search__input"></div>
+
+        <form class="search__input flex justify-center px-2">
+          <select name="apartment-box" id="apartment-select">
+            <option value="">All Departments</option>
+            <option value="flat">Flat</option>
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="1-room">1-room</option>
+            <option value="2-room">2-room</option>
+            <option value="3-room">3-room</option>
+          </select>
+
+          <input
+            type="text"
+            class="search__inp"
+            placeholder="What do you serch for ?"
+          />
+          <input
+            type="search"
+            class="search__inp"
+            placeholder="San Francisco"
+          />
+
+          <button class="search__button bg-custom-dark text-gray">
+            Search
+          </button>
+        </form>
       </div>
     </main>
   </body>
