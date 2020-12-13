@@ -8,6 +8,36 @@
   padding-right: 8px;
 }
 
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .pt-5 {
   padding-top: 20px;
+}
+
+.pt-7 {
+  padding-top: 40px;
+}
+
+.pb-3 {
+  padding-bottom: 12px;
+}
+
+.pr-2 {
+  padding-right: 8px;
+}
+
+.mr-3 {
+  margin-right: 20px;
+}
+
+.ml-5 {
+  margin-left: 20px;
 }

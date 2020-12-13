@@ -1,0 +1,58 @@
+.hot__box > span {
+  border: 1px solid var(--gray-medium);
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--dark-pink);
+  cursor: pointer;
+}
+
+.hot__info > h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.hot__info > p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hot__spn {
+  font-weight: 700;
+}
+
+.hot__btn {
+  border: none;
+  height: 40px;
+  border-radius: 0px 4px 4px 0px;
+  font-weight: 500;
+}
+
+.hot__title > h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.info__box {
+  max-width: 550px;
+}
+
+.hot-spn {
+  border: none;
+  border-right: 1px solid var(--dark-black);
+  height: 40px;
+  font-weight: 500;
+  border-radius: 4px 0px 0px 4px;
+  cursor: pointer;
+}
+
+.img__bottom {
+  bottom: 0;
+  right: 0;
+  background-color: var(--dark-black);
+  width: 70px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

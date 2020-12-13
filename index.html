@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/search.css" />
+    <link rel="stylesheet" href="./styles/hot.css" />
     <link rel="stylesheet" href="./styles/flex.css" />
     <link rel="stylesheet" href="./styles/background.css" />
     <link rel="stylesheet" href="./styles/color.css" />
@@ -83,6 +84,54 @@
             Search
           </button>
         </form>
+      </div>
+      <div class="hot md:hidden flex justify-center flex-column align-center">
+        <div class="hot__box flex align-center">
+          <span class="mr-3"><i class="fas fa-arrow-left"></i></span>
+          <div class="flex align-center">
+            <div class="relative">
+              <div class="hot__title">
+                <h3 class="text-gray uppercase py-4">Hot Ads</h3>
+              </div>
+              <img
+                style="height: 200px; width: 300px"
+                src="https://static.toiimg.com/photo/70072353.cms"
+                alt="photo"
+              />
+              <div class="absolute img__bottom text-pink">
+                <i class="fas fa-arrow-left px-2"></i
+                ><i class="fas fa-arrow-right px-2"></i>
+              </div>
+            </div>
+            <div class="info__box pt-7 px-4 flex flex-column wrap">
+              <div class="hot__info">
+                <h2 class="text-pink">HTC One MB(gunmetal grey)</h2>
+                <p class="text-gray pb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="text-gray">
+                  <span class="hot__spn">By:</span> John Doe
+                </p>
+                <p class="text-gray">
+                  <span class="hot__spn">Location:</span>San Francisco, Ca
+                </p>
+              </div>
+              <div class="pt-5 btn__box text-white flex align-center">
+                <div class="hot-spn bg-custom-pink flex align-center px-4">
+                  450$
+                </div>
+                <div>
+                  <button class="hot__btn px-4 bg-custom-pink text-white">
+                    <i class="pr-2 fas fa-shopping-cart"></i>Purchase detal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="ml-5"><i class="fas fa-arrow-right"></i></span>
+        </div>
       </div>
     </main>
   </body>
