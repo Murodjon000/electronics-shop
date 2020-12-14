@@ -28,13 +28,9 @@
   .md\:flex {
     display: flex;
   }
+  
 
-  .mx-3 {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-
-  .bar-box {
+  .bar-box{
     display: none;
   }
 
