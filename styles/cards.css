@@ -1,0 +1,83 @@
+.m-width {
+  max-width: 75rem;
+}
+
+.card__box {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card__ind {
+  height: 300px;
+  width: 200px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px 3px;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card__ind:hover {
+  transform: scale(0.98);
+}
+
+.border-light {
+  border: 1px solid lightgray;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.card__ind-info > h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card__ind-info > h2:hover {
+  color: #334155;
+}
+
+.card__btn > button {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.card__btn > span {
+  font-size: 1.2rem;
+}
+
+.view-all {
+  float: right;
+  right: 0px;
+  padding-right: 50px;
+}
+
+.border-round {
+  border-radius: 3px;
+}
+
+.card__title {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .lg\:center {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .md\:center {
+    justify-content: center;
+  }
+}

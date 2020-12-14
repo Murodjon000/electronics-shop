@@ -1,5 +1,14 @@
 .search__box {
   height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(
+      to bottom,
+      rgba(211, 82, 102, 0.53),
+      rgba(211, 82, 102, 0.93)
+    ),
+    url("../assets/pet.jpg");
 }
 
 .search__info {
@@ -27,6 +36,7 @@
   width: 160px;
   border: 1px solid white;
   margin-right: 1px;
+  border-radius: 4px 0px 0px 4px;
   color: var(--gray-medium);
   text-indent: 10px;
 }
@@ -42,6 +52,34 @@
 .search__button {
   height: 41px;
   width: 100px;
-  margin-left: 15px;
   border: 1px solid var(--dark-black);
+  border-radius: 0px 4px 4px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .md\:column {
+    flex-direction: column;
+  }
+
+  .search__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search__info {
+    height: 55%;
+  }
+
+  #apartment-select,
+  .search__inp {
+    width: 400px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .search__button {
+    width: 408px;
+    border-radius: 6px;
+  }
 }

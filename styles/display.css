@@ -2,8 +2,54 @@
   display: none;
 }
 
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
 @media only screen and (max-width: 768px) {
   .md\:hidden {
     display: none;
+  }
+
+  .container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .mx-3 {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .bar-box {
+    display: none;
+  }
+
+  .overflow-x {
+    overflow-x: auto;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 }

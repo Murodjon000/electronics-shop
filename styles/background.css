@@ -9,3 +9,11 @@
 .bg-custom-gray {
   background-color: var(--gray-medium);
 }
+
+.bg-lightgray {
+  background-color: #f7f7f7;
+}
+
+.bg-white {
+  background-color: white;
+}

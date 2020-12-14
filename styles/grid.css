@@ -1,0 +1,30 @@
+.gap-3 {
+  gap: 12px;
+}
+
+.place-center {
+  place-items: center;
+}
+
+.gap-5 {
+  gap: 20px;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media only screen and (min-width: 768px) {
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:gap-3 {
+    gap: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .lg\:gap-5 {
+    gap: 20px;
+  }
+}

@@ -1,5 +1,6 @@
 .header__container {
-  height: 58px;
+  height: 65px;
+  font-family: gotham;
 }
 
 .icon {
@@ -43,12 +44,35 @@
 .button > button {
   background-color: var(--dark-pink);
   color: white;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid var(--dark-pink);
   border-radius: 2px;
 }
 
-@media only screen and (max-width: 528px) {
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: var(--dark-black);
+}
+
+.spn-btn {
+  position: absolute;
+  top: -8px;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.avatar--rounded {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 545px) {
   .sm\:icon-sm {
     font-size: 16px;
   }
@@ -61,6 +85,10 @@
 @media only screen and (min-width: 768px) {
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:px-3 {
@@ -89,15 +117,27 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
   .md\:px-2 {
     padding-left: 8px;
     padding-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .spn-avat-img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .spn-avat {
+    display: none;
   }
 }
