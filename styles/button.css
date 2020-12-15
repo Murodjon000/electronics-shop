@@ -1,0 +1,32 @@
+.btn-trans {
+  border: 1px solid #d35266;
+  background-color: transparent;
+  color: #d35266;
+  border-radius: 3px;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-family: "helveticaneue";
+  font-weight: 600;
+}
+
+.btn-trans:hover {
+  transform: scale(0.98);
+}
+
+.btn-num {
+  border-radius: 3px;
+  padding: 5px 12px;
+  font-size: 14px;
+  border: 1px solid #d35266;
+  margin-left: 10px;
+  font-family: "helveticaneue";
+  font-weight: 600;
+}
+
+.btn-num:hover {
+  transform: scale(0.98);
+}
+
+.search-card {
+  background-color: white;
+}

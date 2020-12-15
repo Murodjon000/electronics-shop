@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/variable.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/toggle-nav.css" />
+    <link rel="stylesheet" href="./styles/search.css" />
+    <link rel="stylesheet" href="./styles/search-page.css" />
+    <link rel="stylesheet" href="./styles/hot.css" />
+    <link rel="stylesheet" href="./styles/cards.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/flex.css" />
+    <link rel="stylesheet" href="./styles/grid.css" />
+    <link rel="stylesheet" href="./styles/background.css" />
+    <link rel="stylesheet" href="./styles/color.css" />
+    <link rel="stylesheet" href="./styles/display.css" />
+    <link rel="stylesheet" href="./styles/typo.css" />
+    <link rel="stylesheet" href="./styles/space.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+  </head>
+  <body>
+    <header class="bg-custom-dark">
+      <nav
+        class="flex justify-beetwen align-center header__container px-2 relative"
+      >
+        <div class="flex md:justify-between">
+          <div class="icon flex align-center md:px-3 lg:px-6">
+            <a href="#">
+              <i class="text-pink icon-head fab fa-battle-net"></i
+            ></a>
+
+            <a href="#" class="text-white uppercase">Petto</a>
+          </div>
+          <div class="md:flex align-center md:px-3 lg:px-6 hidden">
+            <div class="links md:px-3 lg:px-6 text-gray md:px-2">
+              <i class="icon__link sm:icon__link-sm fas fa-home"></i>
+              <a href="./index.html" class="text-gray">Home</a>
+            </div>
+            <div class="links md:px-3 lg:px-6 text-gray md:px-2">
+              <i class="icon__link sm:icon__link-sm fas fa-border-style"></i>
+              <a href="./search.html" class="text-gray">Collections</a>
+            </div>
+
+            <div class="links md:px-3 lg:px-6 text-gray md:px-2">
+              <i class="icon__link sm:icon__link-sm fas fa-shopping-cart"></i>
+              <a href="#" class="text-gray">Purchase List</a>
+            </div>
+            <div class="button md:px-3 md:block lg:px-6 hidden">
+              <button type="button">Post An Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="align-center bg-custom-dark lg:flex">
+          <button type="button" class="btn relative spn-avat">
+            <i class="fas fa-comment-alt text-gray"></i>
+            <span class="text-white bg-custom-pink spn-btn">2</span>
+          </button>
+          <button type="button" class="flex btn ml-5 btn align-center">
+            <img
+              class="avatar avatar--rounded spn-avat-img"
+              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <span
+              class="text-white spn-avat px-2 font-600 align-center lg:flex"
+            >
+              John Doe
+              <i class="fas fa-chevron-down px-1 text-sm text-gray"></i>
+            </span>
+          </button>
+        </div>
+        <div class="flex align-center mob-box px-2 justify-center md:hidden">
+          <input type="checkbox" id="toggle" class="header__toggle" />
+          <label for="toggle" class="header__burger">
+            <span class="header__burger-bar"></span>
+            <span class="header__burger-bar"></span>
+            <span class="header__burger-bar"></span>
+          </label>
+          <div
+            class="mobile-nav bg-custom-dark pb-6 pt-3 md:hidden px-4 sm:px-6"
+          >
+            <nav>
+              <a
+                href="./index.html"
+                class="flex align-center text-none text-pink py-2"
+              >
+                <i class="fas fa-home text-2xl"></i>
+                <span class="text-nav ml-2">Home</span>
+              </a>
+              <a
+                href="./search.html"
+                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
+              >
+                <i class="fas fa-border-style text-2xl"></i>
+                <span class="text-nav ml-2">Collection</span>
+              </a>
+              <a
+                href="./show.html"
+                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
+              >
+                <i class="fas fa-shopping-cart text-2xl"></i>
+                <span class="text-nav ml-2">Purchase list</span>
+              </a>
+            </nav>
+            <hr class="my-4 border-bottom" />
+            <button type="button" class="flex btn align-center">
+              <img
+                class="avatar avatar--rounded"
+                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <span class="text-white ml-2 font-600"> John Doe </span>
+            </button>
+            <nav class="mt-2">
+              <a
+                href="#"
+                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
+              >
+                <i class="far fa-user-circle text-2xl"></i>
+                <span class="text-nav font-medium ml-2">Your profile</span>
+              </a>
+              <a
+                href="#"
+                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
+              >
+                <i class="fas fa-user-cog text-2xl"></i>
+                <span class="text-nav font-medium ml-2">Settings</span>
+              </a>
+              <a
+                href="#"
+                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
+              >
+                <i class="fas fa-sign-out-alt text-2xl"></i>
+                <span class="text-nav font-medium ml-2">Logout</span>
+              </a>
+            </nav>
+            <div>
+              <button
+                type="button"
+                class="hover:bg-light btn--primary uppercase text-xs"
+              >
+                Post an ad
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-lightgray">
+      <div class="search__box bg-custom-pink">
+        <div
+          class="search__info text-white flex flex-column align-center justify-center"
+        >
+          <h1 class="uppercase">Petto</h1>
+          <p>Buying And Selling Couldn`t be Simpler than this!</p>
+        </div>
+
+        <form class="search__input flex justify-center px-2 md:column">
+          <select name="apartment-box" id="apartment-select">
+            <option value="">All Pets</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="bird">Bird</option>
+            <option value="horse">Horse</option>
+            <option value="sheep">Sheep</option>
+            <option value="duck">Duck</option>
+          </select>
+
+          <input
+            type="text"
+            class="search__inp"
+            placeholder="What do you search for ?"
+          />
+
+          <button class="search__button bg-custom-dark text-gray">
+            Search
+          </button>
+        </form>
+      </div>
+      <section>
+        <div class="search__page">
+          <h2 class="search__head py-4 px-2 lg:hidden">
+            148 results for pet types in the United States
+          </h2>
+          <div class="md:grid md:grid-cols-2 lg:hidden">
+            <div class="flex flex-column mx-auto px-4 pt-5">
+              <div class="search-card flex justify-center flex-column mx-auto">
+                <div class="relative">
+                  <a href="#">
+                    <img
+                      src="./assets/dog1.jpg"
+                      alt="photo"
+                      class="border-round shadow-md w-100"
+                    />
+                  </a>
+                  <span class="absolute card-bot">Dog</span>
+                </div>
+                <div class="bg-white px-4 py-2">
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-sync-alt"></i>
+                      1 hour ago
+                    </span>
+                    <h2 class="my-3 text-md font-600">
+                      Two Teacup Pomeranian Puppies
+                    </h2>
+                    <p class="pb-2 text-2xl text-gray-500">
+                      California, US - 1,900$
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-clinic-medical"></i>
+                      Healthy
+                    </span>
+                    <span class="text-gray-500 px-4">
+                      <i class="fas fa-mars"></i>
+                      Male
+                    </span>
+                    <span class="text-gray-500">
+                      <i class="fas fa-retweet"></i>
+                      2 years
+                    </span>
+                  </div>
+
+                  <div class="my-3 pt-2">
+                    <button class="btn-trans">Email Owner</button>
+                    <button class="bg-custom-pink text-white btn-num">
+                      (404)-36265332
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-column mx-auto px-4 pt-5">
+              <div
+                class="search-card flex justify-center flex-column mx-auto my-3"
+              >
+                <div class="relative">
+                  <a href="#">
+                    <img
+                      src="./assets/dog2.jpg"
+                      alt="photo"
+                      class="border-round shadow-md w-100"
+                    />
+                  </a>
+                  <span class="absolute card-bot">Dog</span>
+                </div>
+                <div class="bg-white px-4 py-2">
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-sync-alt"></i>
+                      1 hour ago
+                    </span>
+                    <h2 class="my-3 text-md font-600">
+                      German Shepherd Puppies
+                    </h2>
+                    <p class="pb-2 text-2xl text-gray-500">
+                      California, US - 900$
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-clinic-medical"></i>
+                      Healthy
+                    </span>
+                    <span class="text-gray-500 px-4">
+                      <i class="fas fa-mars"></i>
+                      Male
+                    </span>
+                    <span class="text-gray-500">
+                      <i class="fas fa-retweet"></i>
+                      2 years
+                    </span>
+                  </div>
+
+                  <div class="my-3 pt-2">
+                    <button class="btn-trans">Email Owner</button>
+                    <button class="bg-custom-pink text-white btn-num">
+                      (404)-36265332
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-column mx-auto px-4 pt-5">
+              <div
+                class="search-card flex justify-center flex-column mx-auto my-3"
+              >
+                <div class="relative">
+                  <a href="#">
+                    <img
+                      src="./assets/dog3.jpg"
+                      alt="photo"
+                      class="border-round shadow-md w-100"
+                    />
+                  </a>
+                  <span class="absolute card-bot">Dog</span>
+                </div>
+                <div class="bg-white px-4 py-2">
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-sync-alt"></i>
+                      2 hour ago
+                    </span>
+                    <h2 class="my-3 text-md font-600">
+                      Gracie, Mixed Breed Dog
+                    </h2>
+                    <p class="pb-2 text-2xl text-gray-500">
+                      California, US - 1,900$
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-clinic-medical"></i>
+                      Healthy
+                    </span>
+                    <span class="text-gray-500 px-4">
+                      <i class="fas fa-mars"></i>
+                      Female
+                    </span>
+                    <span class="text-gray-500">
+                      <i class="fas fa-retweet"></i>
+                      1 years
+                    </span>
+                  </div>
+
+                  <div class="my-3 pt-2">
+                    <button class="btn-trans">Email Owner</button>
+                    <button class="bg-custom-pink text-white btn-num">
+                      (404)-36265332
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-column mx-auto px-4 pt-5">
+              <div
+                class="search-card flex justify-center flex-column mx-auto my-3"
+              >
+                <div class="relative">
+                  <a href="#">
+                    <img
+                      src="./assets/dog4.jpg"
+                      alt="photo"
+                      class="border-round shadow-md w-100"
+                    />
+                  </a>
+                  <span class="absolute card-bot">Dog</span>
+                </div>
+                <div class="bg-white px-4 py-2">
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-sync-alt"></i>
+                      3 hour ago
+                    </span>
+                    <h2 class="my-3 text-md font-600">
+                      Super Energetic Maltipoo Puppies
+                    </h2>
+                    <p class="pb-2 text-2xl text-gray-500">Texa, US - 100$</p>
+                  </div>
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-clinic-medical"></i>
+                      Healthy
+                    </span>
+                    <span class="text-gray-500 px-4">
+                      <i class="fas fa-mars"></i>
+                      Male
+                    </span>
+                    <span class="text-gray-500">
+                      <i class="fas fa-retweet"></i>
+                      1.5 years
+                    </span>
+                  </div>
+
+                  <div class="my-3 pt-2">
+                    <button class="btn-trans">Email Owner</button>
+                    <button class="bg-custom-pink text-white btn-num">
+                      (404)-36265332
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-column mx-auto px-4 pt-5">
+              <div
+                class="search-card flex justify-center flex-column mx-auto my-3"
+              >
+                <div class="relative">
+                  <a href="#">
+                    <img
+                      src="./assets/dog7.jpg"
+                      alt="photo"
+                      class="border-round shadow-md w-100"
+                    />
+                  </a>
+                  <span class="absolute card-bot">Dog</span>
+                </div>
+                <div class="bg-white px-4 py-2">
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-sync-alt"></i>
+                      1 hour ago
+                    </span>
+                    <h2 class="my-3 text-md font-600">
+                      Playful Oliver, Poodle Puppy
+                    </h2>
+                    <p class="pb-2 text-2xl text-gray-500">
+                      California, US - 2,900$
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-clinic-medical"></i>
+                      Healthy
+                    </span>
+                    <span class="text-gray-500 px-4">
+                      <i class="fas fa-mars"></i>
+                      Male
+                    </span>
+                    <span class="text-gray-500">
+                      <i class="fas fa-retweet"></i>
+                      1 years
+                    </span>
+                  </div>
+
+                  <div class="my-3 pt-2">
+                    <button class="btn-trans">Email Owner</button>
+                    <button class="bg-custom-pink text-white btn-num">
+                      (404)-36265332
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-column mx-auto px-4 pt-5">
+              <div
+                class="search-card flex justify-center flex-column mx-auto my-3"
+              >
+                <div class="relative">
+                  <a href="#">
+                    <img
+                      src="./assets/dog6.jpg"
+                      alt="photo"
+                      class="border-round shadow-md w-100"
+                    />
+                  </a>
+                  <span class="absolute card-bot">Dog</span>
+                </div>
+                <div class="bg-white px-4 py-2">
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-sync-alt"></i>
+                      1 hour ago
+                    </span>
+                    <h2 class="my-3 text-md font-600">
+                      Male and Female Yorkie Puppies
+                    </h2>
+                    <p class="pb-2 text-2xl text-gray-500">
+                      New York, US - 900$
+                    </p>
+                  </div>
+                  <div class="pt-2">
+                    <span class="text-gray-500">
+                      <i class="fas fa-clinic-medical"></i>
+                      Healthy
+                    </span>
+                    <span class="text-gray-500 px-4">
+                      <i class="fas fa-mars"></i>
+                      Male
+                    </span>
+                    <span class="text-gray-500">
+                      <i class="fas fa-retweet"></i>
+                      2 years
+                    </span>
+                  </div>
+
+                  <div class="my-3 pt-2">
+                    <button class="btn-trans">Email Owner</button>
+                    <button class="bg-custom-pink text-white btn-num">
+                      (404)-36265332
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="left__page lg:grid lg:grid-cols-3 hidden m-width mx-auto lg:gap-3"
+        >
+          <div class="lg:flex hidden flex-column form__wrap">
+            <div>
+              <form>
+                <div class="flex">
+                  <label class="room flex flex-column px-4"
+                    >Pets
+                    <select name="apartment-box" class="search-opt">
+                      <option value="">All Pets</option>
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                      <option value="bird">Bird</option>
+                      <option value="horse">Horse</option>
+                      <option value="sheep">Sheep</option>
+                      <option value="duck">Duck</option>
+                    </select>
+                  </label>
+                  <label class="room flex flex-column"
+                    >Animals
+                    <select name="apartment-box" class="search-opt">
+                      <option value="">All Animals</option>
+                      <option value="dog">Dog</option>
+                      <option value="cat">Cat</option>
+                      <option value="bird">Bird</option>
+                      <option value="horse">Horse</option>
+                      <option value="sheep">Sheep</option>
+                      <option value="duck">Duck</option>
+                    </select>
+                  </label>
+                </div>
+                <hr class="border-left" />
+                <div class="flex flex-column px-4">
+                  <h2 class="my-3">Pet Type</h2>
+                  <label class="lab-left"
+                    ><input type="radio" name="radio" class="radio-check" />
+                    Dog</label
+                  >
+                  <label class="lab-left"
+                    ><input type="radio" name="radio" class="radio-check" />
+                    Cat</label
+                  >
+                  <label class="lab-left"
+                    ><input type="radio" name="radio" class="radio-check" />
+                    Puppy</label
+                  >
+                  <label class="lab-left"
+                    ><input type="radio" name="radio" class="radio-check" />
+                    Bird</label
+                  >
+                </div>
+                <hr class="border-left" />
+                <div class="flex flex-column px-4">
+                  <h2 class="my-3">Animals</h2>
+                  <label class="lab-left"
+                    ><input type="checkbox" name="checkbox" /> Cow</label
+                  >
+                  <label class="lab-left"
+                    ><input type="checkbox" name="checkbox" /> Horse</label
+                  >
+                  <label class="lab-left"
+                    ><input type="checkbox" name="checkbox" /> Sheep</label
+                  >
+                  <label class="lab-left"
+                    ><input type="checkbox" name="checkbox" /> Goat</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="px-4 pt-5 lg:col-lg-span-2">
+            <h2 class="search__head2 py-4 hidden lg:flex">
+              148 results for pet types in the United States
+            </h2>
+            <div class="search-card flex my-3 relative">
+              <span class="icon-right absolute flex align-center">
+                <i class="far fa-bookmark text-gray-500 px-4"></i>
+                <i class="fas fa-thumbs-up text-pink"></i>
+              </span>
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="./assets/dog1.jpg"
+                    alt="photo"
+                    class="shadow-md img__search"
+                  />
+                </a>
+                <span class="absolute card-bot">Dog</span>
+              </div>
+              <div class="bg-white px-4 py-2">
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-sync-alt"></i>
+                    1 hour ago
+                  </span>
+
+                  <h2 class="my-3 text-md font-600">
+                    Two Teacup Pomeranian Puppies
+                  </h2>
+                  <p class="pb-2 text-2xl text-gray-500">
+                    California, US - 1,900$
+                  </p>
+                </div>
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-clinic-medical"></i>
+                    Healthy
+                  </span>
+                  <span class="text-gray-500 px-4">
+                    <i class="fas fa-mars"></i>
+                    Male
+                  </span>
+                  <span class="text-gray-500">
+                    <i class="fas fa-retweet"></i>
+                    2 years
+                  </span>
+                </div>
+
+                <div class="my-3 pt-2">
+                  <button class="btn-trans">Email Owner</button>
+                  <button class="bg-custom-pink text-white btn-num">
+                    (404)-36265332
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-card flex my-3 relative">
+              <span class="icon-right absolute flex align-center">
+                <i class="far fa-bookmark text-gray-500 px-4"></i>
+                <i class="fas fa-thumbs-up text-pink"></i>
+              </span>
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="./assets/cat2.jpg"
+                    alt="photo"
+                    class="shadow-md img__search"
+                  />
+                </a>
+                <span class="absolute card-bot">Cat</span>
+              </div>
+              <div class="bg-white px-4 py-2">
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-sync-alt"></i>
+                    1 hour ago
+                  </span>
+
+                  <h2 class="my-3 text-md font-600">Damon, Exotic Shorthair</h2>
+                  <p class="pb-2 text-2xl text-gray-500">
+                    New York, US - 2,900$
+                  </p>
+                </div>
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-clinic-medical"></i>
+                    Healthy
+                  </span>
+                  <span class="text-gray-500 px-4">
+                    <i class="fas fa-mars"></i>
+                    Male
+                  </span>
+                  <span class="text-gray-500">
+                    <i class="fas fa-retweet"></i>
+                    2 years
+                  </span>
+                </div>
+
+                <div class="my-3 pt-2">
+                  <button class="btn-trans">Email Owner</button>
+                  <button class="bg-custom-pink text-white btn-num">
+                    (404)-36265332
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-card flex my-3 relative">
+              <span class="icon-right absolute flex align-center">
+                <i class="far fa-bookmark text-gray-500 px-4"></i>
+                <i class="fas fa-thumbs-up text-pink"></i>
+              </span>
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="./assets/search1.jpeg"
+                    alt="photo"
+                    class="shadow-md img__search"
+                  />
+                </a>
+                <span class="absolute card-bot">Serval</span>
+              </div>
+              <div class="bg-white px-4 py-2">
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-sync-alt"></i>
+                    2 hour ago
+                  </span>
+
+                  <h2 class="my-3 text-md font-600">
+                    Registered Pair Servals, Serval
+                  </h2>
+                  <p class="pb-2 text-2xl text-gray-500">
+                    Alabama, US - 11,900$
+                  </p>
+                </div>
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-clinic-medical"></i>
+                    Healthy
+                  </span>
+                  <span class="text-gray-500 px-4">
+                    <i class="fas fa-mars"></i>
+                    Female
+                  </span>
+                  <span class="text-gray-500">
+                    <i class="fas fa-retweet"></i>
+                    5 years
+                  </span>
+                </div>
+
+                <div class="my-3 pt-2">
+                  <button class="btn-trans">Email Owner</button>
+                  <button class="bg-custom-pink text-white btn-num">
+                    (404)-36265332
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-card flex my-3 relative">
+              <span class="icon-right absolute flex align-center">
+                <i class="far fa-bookmark text-gray-500 px-4"></i>
+                <i class="fas fa-thumbs-up text-pink"></i>
+              </span>
+              <div class="relative">
+                <a href="#">
+                  <img
+                    src="./assets/bird.jpg"
+                    alt="photo"
+                    class="shadow-md img__search"
+                  />
+                </a>
+                <span class="absolute card-bot">Parrot</span>
+              </div>
+              <div class="bg-white px-4 py-2">
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-sync-alt"></i>
+                    1 hour ago
+                  </span>
+
+                  <h2 class="my-3 text-md font-600">
+                    Jlly, Blue and Gold Macaw
+                  </h2>
+                  <p class="pb-2 text-2xl text-gray-500">
+                    California, US - 600$
+                  </p>
+                </div>
+                <div class="pt-2">
+                  <span class="text-gray-500">
+                    <i class="fas fa-clinic-medical"></i>
+                    Healthy
+                  </span>
+                  <span class="text-gray-500 px-4">
+                    <i class="fas fa-mars"></i>
+                    Male
+                  </span>
+                  <span class="text-gray-500">
+                    <i class="fas fa-retweet"></i>
+                    15 months
+                  </span>
+                </div>
+
+                <div class="my-3 pt-2">
+                  <button class="btn-trans">Email Owner</button>
+                  <button class="bg-custom-pink text-white btn-num">
+                    (404)-36265332
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-beetwen align-center pb-5">
+              <span> Showing 1 to 4 of 45 results </span>
+              <div class="flex align-center">
+                <span class="span__bottom text-center"
+                  ><i class="fas fa-chevron-left"></i
+                ></span>
+                <span class="span__bottom text-center">1</span>
+                <span class="span__bottom text-center">2</span>
+                <span class="span__bottom z-ind text-center">...</span>
+                <span class="span__bottom text-center">8</span>
+                <span class="span__bottom text-center">9</span>
+                <span class="span__bottom text-center">
+                  <i class="fas fa-chevron-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer__box bg-white px-2">
+      <div class="mx-auto m-width">
+        <div class="footer__logo flex flex-column py-4 px-2">
+          <div class="flex align-center">
+            <a href="#">
+              <i class="text-pink icon-head fab fa-battle-net"></i
+            ></a>
+
+            <a href="#" class="text-pink uppercase text-none text-md font-600"
+              >Petto</a
+            >
+          </div>
+          <div class="with-logo">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis cras
+              consequat ornare mi. Nulla lectus mauris bibendum commodo.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 py-4">
+          <div class="flex flex-column px-2">
+            <h2 class="text-pink font-600 text-md pb-5 uppercase">Places</h2>
+            <div class="flex flex-column">
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >California</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >San Francisco</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >Texas</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >Dallas</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >New York</a
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-column text-md px-2">
+            <h2 class="text-pink font-600 pb-5 uppercase">Pages</h2>
+            <div class="flex flex-column">
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >About Us</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >Contact</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >Terms & Conditions</a
+              >
+              <a
+                href="#"
+                class="text-none text-2xl text-black pb-2 hover:text-pink"
+                >Privacy Policy</a
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-column px-2 soc-icon">
+            <h2 class="text-pink font-600 text-md pb-5 uppercase">
+              Social Links
+            </h2>
+            <div>
+              <a href="#" class="footer__icons"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a href="#" class="footer__icons"
+                ><i class="fab fa-twitter-square pl-2"></i
+              ></a>
+              <a href="#" class="footer__icons"
+                ><i class="fab fa-youtube pl-2"></i
+              ></a>
+              <a href="#" class="footer__icons"
+                ><i class="fab fa-instagram pl-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-foot" />
+        <div class="flex justify-beetwen align-center py-4 text-foot text-sm">
+          <p>&#169; Copyright Workflow. All rights reserved.</p>
+          <div class="flex items-center mt-3">
+            <a href="#" class="hover:text-pink text-none px-2"
+              >Terms & Conditions</a
+            >
+            <a href="#" class="hover:text-pink text-none px-2"
+              >Privacy policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
