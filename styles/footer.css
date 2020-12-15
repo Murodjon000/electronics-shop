@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "helveticaneue";
+  src: url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer__box {
+  font-family: "helveticaneue";
+}
+
+.footer__icons {
+  text-decoration: none;
+  font-size: 28px;
+  color: #334155;
+}
+
+.footer__icons:hover {
+  color: #888;
+}
+
+.with-logo {
+  width: 400px;
+}
+
+.border-foot {
+  color: #e2e8f0;
+}

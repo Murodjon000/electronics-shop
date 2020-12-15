@@ -3,7 +3,11 @@
 }
 
 .text-black {
-  color: var(--dark-black);
+  color: #334155;
+}
+
+.text-foot {
+  color: #888;
 }
 
 .text-gray {

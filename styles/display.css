@@ -14,23 +14,24 @@
   display: grid;
 }
 
-@media only screen and (max-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
-
-  .container {
-    display: block;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .md\:flex {
     display: flex;
   }
-  
 
-  .bar-box{
+  .md\:mt-5 {
+    margin-top: 0;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .bar-box {
     display: none;
   }
 

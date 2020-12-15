@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "gotham";
+  src: url("../fonts/Gotham-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .search__box {
-  height: 300px;
+  height: 327px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +26,7 @@
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 1px;
+  font-family: "gotham";
 }
 
 .search__info > p {

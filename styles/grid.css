@@ -18,6 +18,11 @@
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:gap-3 {
     gap: 12px;
   }
@@ -26,5 +31,9 @@
 @media only screen and (min-width: 1024px) {
   .lg\:gap-5 {
     gap: 20px;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

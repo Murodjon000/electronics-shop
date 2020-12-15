@@ -21,3 +21,32 @@
 .text-sm {
   font-size: 12px;
 }
+
+.hover\:text-gray-400:hover {
+  color: #a1a1aa;
+}
+
+.hover\:text-pink:hover {
+  color: #888;
+}
+
+.text-gray-500 {
+  color: #888;
+  text-decoration: none;
+}
+
+.text-2xl {
+  font-size: 18px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-nav {
+  font-size: 18px;
+}
+
+.text-none {
+  text-decoration: none;
+}

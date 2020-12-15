@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "helveticaneue";
+  src: url("../fonts/HelveticaNeue.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .m-width {
   max-width: 75rem;
 }
@@ -5,6 +12,7 @@
 .card__box {
   max-width: 100%;
   overflow-x: auto;
+  font-family: "helveticaneue";
 }
 
 .shadow-md {

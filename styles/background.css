@@ -17,3 +17,7 @@
 .bg-white {
   background-color: white;
 }
+
+.hover\:bg-light:hover {
+  background-color: #d66274;
+}

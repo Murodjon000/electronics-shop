@@ -1,6 +1,13 @@
+@font-face {
+  font-family: "gotham";
+  src: url("../fonts/Gotham-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .header__container {
-  height: 65px;
-  font-family: gotham;
+  height: 60px;
+  font-family: "gotham";
 }
 
 .icon {
@@ -44,14 +51,29 @@
 .button > button {
   background-color: var(--dark-pink);
   color: white;
-  padding: 7px;
+  padding: 4px;
   border: 1px solid var(--dark-pink);
   border-radius: 2px;
+  font-family: "gotham";
+}
+
+.button > button:hover {
+  background-color: #d66274;
 }
 
 .avatar {
   width: 32px;
   height: 32px;
+}
+
+.btn--primary {
+  background-color: var(--dark-pink);
+  border: 1px solid var(--dark-pink);
+  color: white;
+  font-weight: 700;
+  padding: 7px;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .btn {
@@ -114,8 +136,8 @@
   }
 
   .lg\:px-6 {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .lg\:justify-between {
@@ -127,6 +149,10 @@
   .md\:px-2 {
     padding-left: 8px;
     padding-right: 8px;
+  }
+
+  .soc-icon {
+    margin-top: 30px;
   }
 }
 
