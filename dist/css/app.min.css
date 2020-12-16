@@ -312,6 +312,11 @@
   font-size: 1.2rem;
 }
 
+.card__image {
+  height: 150px;
+  width: 200px;
+}
+
 .view-all {
   float: right;
   right: 0;
@@ -468,6 +473,30 @@
   color: #e2e8f0;
 }
 
+.foot__btn {
+  background-color: transparent;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  margin-left: 10px;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.foot__btn1 {
+  background-color: transparent;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  margin-left: 16px;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .gap-3 {
   gap: 12px;
 }
@@ -518,8 +547,14 @@
   .lg\:gap-5 {
     gap: 20px;
   }
+  .lg\:col-lg-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .lg\:col-lg-span-2 {
     grid-column: span 2 / span 2;
+  }
+  .lg\:col-lg-span-3 {
+    grid-column: span 3 / span 3;
   }
   .lg\:grid-cols-4 {
     -ms-grid-columns: (minmax(0, 1fr))[4];
@@ -565,13 +600,18 @@
   font-weight: 500;
 }
 
-.hot__title > h3 {
+.hot__title > h1 {
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .info__box {
   max-width: 550px;
+}
+
+.hot__img {
+  height: 230px;
+  width: 300px;
 }
 
 .hot-spn {
@@ -712,6 +752,7 @@
 
 .search__input {
   margin-top: -15px;
+  width: 100%;
 }
 
 #apartment-select {

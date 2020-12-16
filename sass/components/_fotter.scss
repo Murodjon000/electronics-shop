@@ -19,3 +19,27 @@
 .border-foot {
   color: $gray-200;
 }
+
+.foot__btn {
+  background-color: transparent;
+  border: 1px solid $gray-200;
+  color: $gray-700;
+  margin-left: 10px;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.foot__btn1 {
+  background-color: transparent;
+  border: 1px solid $gray-200;
+  color: $gray-700;
+  margin-left: 16px;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}

@@ -147,7 +147,10 @@
           <p>Buying And Selling Couldn`t be Simpler than this!</p>
         </div>
 
-        <form class="search__input flex justify-center px-2 md:column">
+        <form
+          action="./search.html"
+          class="search__input flex justify-center px-2 md:column"
+        >
           <select name="apartment-box" id="apartment-select">
             <option value="">All Pets</option>
             <option value="dog">Dog</option>
@@ -164,7 +167,7 @@
             placeholder="What do you search for ?"
           />
 
-          <button class="search__button bg-custom-dark text-gray">
+          <button type="submit" class="search__button bg-custom-dark text-gray">
             Search
           </button>
         </form>
@@ -810,8 +813,8 @@
       </section>
     </main>
     <footer class="footer__box bg-white px-2">
-      <div class="mx-auto m-width">
-        <div class="footer__logo flex flex-column py-4 px-2">
+      <div class="mx-auto m-width grid lg:grid-cols-4">
+        <div class="footer__logo flex flex-column py-4 px-2 lg:col-lg-span-1">
           <div class="flex align-center">
             <a href="#">
               <i class="text-pink icon-head fab fa-battle-net"></i
@@ -821,7 +824,7 @@
               >Petto</a
             >
           </div>
-          <div class="with-logo">
+          <div class="">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis cras
               consequat ornare mi. Nulla lectus mauris bibendum commodo.
@@ -829,7 +832,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 py-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 py-4 lg:col-lg-span-3">
           <div class="flex flex-column px-2">
             <h2 class="text-pink font-600 text-md pb-5 uppercase">Places</h2>
             <div class="flex flex-column">
@@ -893,35 +896,45 @@
           </div>
 
           <div class="flex flex-column px-2 soc-icon">
-            <h2 class="text-pink font-600 text-md pb-5 uppercase">
-              Social Links
-            </h2>
-            <div>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-facebook-square"></i
-              ></a>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-twitter-square pl-2"></i
-              ></a>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-youtube pl-2"></i
-              ></a>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-instagram pl-2"></i
-              ></a>
+            <div class="flex">
+              <div class="flex align-center flex-column pb-2">
+                <div class="flex align-center pb-2">
+                  <h1 class="uppercase text-pink">Country</h1>
+                  <button class="foot__btn1">Uzbekistan</button>
+                </div>
+                <div class="flex align-center pb-2">
+                  <h1 class="uppercase text-pink">Language</h1>
+                  <button class="foot__btn">Uzbek</button>
+                </div>
+                <div class="flex align-center pb-2">
+                  <h1 class="uppercase text-pink">Currency</h1>
+                  <button class="foot__btn">Uz Sum</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="mx-auto m-width">
         <hr class="border-foot" />
         <div class="flex justify-beetwen align-center py-4 text-foot text-sm">
-          <p>&#169; Copyright Workflow. All rights reserved.</p>
-          <div class="flex items-center mt-3">
-            <a href="#" class="hover:text-pink text-none px-2"
-              >Terms & Conditions</a
-            >
-            <a href="#" class="hover:text-pink text-none px-2"
-              >Privacy policy</a
-            >
+          <div>
+            <p>&#169; Copyright Workflow. All rights reserved.</p>
+          </div>
+
+          <div class="flex align-center mt-3">
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-facebook-square px-4"></i
+            ></a>
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-twitter-square px-4"></i
+            ></a>
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-youtube px-4"></i
+            ></a>
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-instagram pl-2"></i
+            ></a>
           </div>
         </div>
       </div>

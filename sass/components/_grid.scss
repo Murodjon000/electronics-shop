@@ -47,8 +47,16 @@
     gap: 20px;
   }
 
+  .lg\:col-lg-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:col-lg-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-lg-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:grid-cols-4 {

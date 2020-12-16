@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petto</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -139,7 +140,7 @@
       </nav>
     </header>
     <main class="bg-lightgray">
-      <div class="search__box bg-custom-pink">
+      <div class="search__box flex flex-column bg-custom-pink">
         <div
           class="search__info text-white flex flex-column align-center justify-center"
         >
@@ -147,24 +148,31 @@
           <p>Buying And Selling Couldn`t be Simpler than this!</p>
         </div>
 
-        <form class="search__input flex justify-center px-2 md:column">
-          <select name="apartment-box" id="apartment-select">
-            <option value="">All Pets</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="bird">Bird</option>
-            <option value="horse">Horse</option>
-            <option value="sheep">Sheep</option>
-            <option value="duck">Duck</option>
-          </select>
+        <form
+          action="./search.html"
+          class="search__input flex justify-center px-2 md:column"
+        >
+          <div>
+            <select name="apartment-box" id="apartment-select">
+              <option value="">All Pets</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="bird">Bird</option>
+              <option value="horse">Horse</option>
+              <option value="sheep">Sheep</option>
+              <option value="duck">Duck</option>
+            </select>
+          </div>
 
-          <input
-            type="text"
-            class="search__inp"
-            placeholder="What do you search for ?"
-          />
+          <div>
+            <input
+              type="text"
+              class="search__inp"
+              placeholder="What do you search for ?"
+            />
+          </div>
 
-          <button class="search__button bg-custom-dark text-gray">
+          <button type="submit" class="search__button bg-custom-dark text-gray">
             Search
           </button>
         </form>
@@ -178,13 +186,13 @@
             <div class="flex align-center">
               <div class="">
                 <div class="hot__title">
-                  <h3 class="text-gray uppercase py-4">Hot Ads</h3>
+                  <h1 class="text-gray uppercase py-4">Hot Ads</h1>
                 </div>
                 <a href="#" class="relative">
                   <img
-                    style="height: 200px; width: 300px"
                     src="https://animal.direct/files/12-2020/ad42893/bella-alaskan-687687409_large.jpg"
                     alt="photo"
+                    class="hot__img"
                   />
                   <div class="absolute img__bottom text-pink">
                     <i class="fas fa-chevron-left px-2"></i
@@ -228,9 +236,13 @@
           </div>
         </div>
       </section>
+
       <div class="cards m-width mx-auto overflow-x-hidden">
-        <a href="#" class="card__title flex text-gray align-center py-4 px-4">
-          <h2 class="text-md font-600">Dogs</h2>
+        <a
+          href="./search.html"
+          class="card__title flex text-gray align-center py-4 px-4"
+        >
+          <h1 class="text-md font-600">Dogs</h1>
           <p class="px-1 text-md">
             (Sherman,Bulldog,Golden Retriever,Poodle...)
           </p>
@@ -242,12 +254,11 @@
         >
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog1.jpg"
                   alt="photo"
-                  class="border-round shadow-md"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -265,12 +276,11 @@
           </div>
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog2.jpg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -289,12 +299,11 @@
 
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog3.jpg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -313,12 +322,11 @@
 
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog4.jpg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -337,12 +345,11 @@
 
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog5.jpeg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -361,12 +368,11 @@
 
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog6.jpg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -385,12 +391,11 @@
 
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog7.jpg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -409,12 +414,11 @@
 
           <div class="card__ind px-4 mx-3 pb-2">
             <div class="flex justify-center pt-2">
-              <a href="#">
+              <a href="./search.html">
                 <img
-                  style="height: 150px; width: 200px"
                   src="./assets/dog7.jpg"
                   alt="photo"
-                  class="border-round"
+                  class="border-round shadow-md card__image"
                 />
               </a>
             </div>
@@ -436,7 +440,7 @@
       <section class="mt-5">
         <div class="cards m-width mx-auto overflow-x-hidden">
           <a href="#" class="card__title flex text-gray align-center py-4 px-4">
-            <h2 class="text-md font-600">Cats</h2>
+            <h1 class="text-md font-600">Cats</h1>
             <p class="px-1 text-md">
               (Shorthair,Melon,Scottish Fold,Ragdoll...)
             </p>
@@ -448,12 +452,11 @@
           >
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat1.jpg"
                     alt="photo"
-                    class="border-round shadow-md"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -471,12 +474,11 @@
             </div>
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat2.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -495,12 +497,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat3.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -521,10 +522,9 @@
               <div class="flex justify-center pt-2">
                 <a href="#">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat4.jpeg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -543,12 +543,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat5.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -567,12 +566,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat6.png"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -593,10 +591,9 @@
               <div class="flex justify-center pt-2">
                 <a href="#">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat7.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -614,12 +611,11 @@
             </div>
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat8.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -642,7 +638,7 @@
       <section class="mt-5 pb-5">
         <div class="cards m-width mx-auto overflow-x-hidden">
           <a href="#" class="card__title flex text-gray align-center py-4 px-4">
-            <h2 class="text-md font-600">Exotic Animals</h2>
+            <h1 class="text-md font-600">Exotic Animals</h1>
             <p class="px-1 text-md">(Birds,Horses,Scottish Fold,Ragdoll...)</p>
           </a>
           <hr class="border-light" />
@@ -652,12 +648,11 @@
           >
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/ex1.jpg"
                     alt="photo"
-                    class="border-round shadow-md"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -675,12 +670,11 @@
             </div>
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/ex2.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -699,12 +693,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat3.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -723,12 +716,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/bird.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -747,12 +739,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/horse.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -771,12 +762,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/rep.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -795,12 +785,11 @@
 
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat7.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -818,12 +807,11 @@
             </div>
             <div class="card__ind px-4 mx-3 pb-2">
               <div class="flex justify-center pt-2">
-                <a href="#">
+                <a href="./search.html">
                   <img
-                    style="height: 150px; width: 200px"
                     src="./assets/cat8.jpg"
                     alt="photo"
-                    class="border-round"
+                    class="border-round shadow-md card__image"
                   />
                 </a>
               </div>
@@ -844,8 +832,8 @@
       </section>
     </main>
     <footer class="footer__box bg-white px-2">
-      <div class="mx-auto m-width">
-        <div class="footer__logo flex flex-column py-4 px-2">
+      <div class="mx-auto m-width grid lg:grid-cols-4">
+        <div class="footer__logo flex flex-column py-4 px-2 lg:col-lg-span-1">
           <div class="flex align-center">
             <a href="#">
               <i class="text-pink icon-head fab fa-battle-net"></i
@@ -855,7 +843,7 @@
               >Petto</a
             >
           </div>
-          <div class="with-logo">
+          <div class="">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis cras
               consequat ornare mi. Nulla lectus mauris bibendum commodo.
@@ -863,7 +851,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 py-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 py-4 lg:col-lg-span-3">
           <div class="flex flex-column px-2">
             <h2 class="text-pink font-600 text-md pb-5 uppercase">Places</h2>
             <div class="flex flex-column">
@@ -927,35 +915,45 @@
           </div>
 
           <div class="flex flex-column px-2 soc-icon">
-            <h2 class="text-pink font-600 text-md pb-5 uppercase">
-              Social Links
-            </h2>
-            <div>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-facebook-square"></i
-              ></a>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-twitter-square pl-2"></i
-              ></a>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-youtube pl-2"></i
-              ></a>
-              <a href="#" class="footer__icons"
-                ><i class="fab fa-instagram pl-2"></i
-              ></a>
+            <div class="flex">
+              <div class="flex align-center flex-column pb-2">
+                <div class="flex align-center pb-2">
+                  <h1 class="uppercase text-pink">Country</h1>
+                  <button class="foot__btn1">Uzbekistan</button>
+                </div>
+                <div class="flex align-center pb-2">
+                  <h1 class="uppercase text-pink">Language</h1>
+                  <button class="foot__btn">Uzbek</button>
+                </div>
+                <div class="flex align-center pb-2">
+                  <h1 class="uppercase text-pink">Currency</h1>
+                  <button class="foot__btn">Uz Sum</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="mx-auto m-width">
         <hr class="border-foot" />
         <div class="flex justify-beetwen align-center py-4 text-foot text-sm">
-          <p>&#169; Copyright Workflow. All rights reserved.</p>
-          <div class="flex items-center mt-3">
-            <a href="#" class="hover:text-pink text-none px-2"
-              >Terms & Conditions</a
-            >
-            <a href="#" class="hover:text-pink text-none px-2"
-              >Privacy policy</a
-            >
+          <div>
+            <p>&#169; Copyright Workflow. All rights reserved.</p>
+          </div>
+
+          <div class="flex align-center mt-3">
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-facebook-square px-4"></i
+            ></a>
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-twitter-square px-4"></i
+            ></a>
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-youtube px-4"></i
+            ></a>
+            <a href="#" class="footer__icons"
+              ><i class="fab fa-instagram pl-2"></i
+            ></a>
           </div>
         </div>
       </div>
