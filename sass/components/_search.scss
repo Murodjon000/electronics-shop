@@ -28,8 +28,8 @@
 }
 
 #apartment-select {
-  height: 41px;
-  width: 150px;
+  @include rect(41px, 150px);
+
   border: 1px solid white;
   margin-right: 1px;
   border-radius: 4px 0 0 4px;
@@ -38,16 +38,16 @@
 }
 
 .search__inp {
-  height: 37px;
-  width: 200px;
+  @include rect(37px, 200px);
+
   border: 1px solid white;
   margin-right: 1px;
   text-indent: 10px;
 }
 
 .search__button {
-  height: 41px;
-  width: 100px;
+  @include rect(41px, 100px);
+
   border: 1px solid $dark-black;
   border-radius: 0 4px 4px 0;
 }
