@@ -5,11 +5,11 @@
 .footer__icons {
   text-decoration: none;
   font-size: 28px;
-  color: #334155;
+  color: $gray-700;
 }
 
 .footer__icons:hover {
-  color: #888888;
+  color: $gray-medium;
 }
 
 .with-logo {
@@ -17,5 +17,5 @@
 }
 
 .border-foot {
-  color: #e2e8f0;
+  color: $gray-200;
 }

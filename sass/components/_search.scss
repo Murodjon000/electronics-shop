@@ -1,14 +1,14 @@
 .search__box {
   height: 327px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background: linear-gradient(
       to bottom,
       rgba(211, 82, 102, 0.53),
       rgba(211, 82, 102, 0.93)
     ),
     url("../../assets/pet.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .search__info {
@@ -37,7 +37,7 @@
   width: 160px;
   border: 1px solid white;
   margin-right: 1px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   color: $gray-medium;
   text-indent: 10px;
 }
@@ -54,7 +54,7 @@
   height: 41px;
   width: 100px;
   border: 1px solid $dark-black;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 @media only screen and (max-width: 768px) {

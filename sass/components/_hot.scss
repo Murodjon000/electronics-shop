@@ -25,7 +25,7 @@
 .hot__btn {
   border: none;
   height: 40px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   font-weight: 500;
 }
 
@@ -43,7 +43,7 @@
   border-right: 1px solid $dark-black;
   height: 40px;
   font-weight: 500;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   cursor: pointer;
 }
 
