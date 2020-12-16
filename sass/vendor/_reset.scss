@@ -92,6 +92,16 @@ video {
   vertical-align: baseline;
 }
 
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
 /* make sure to set some focus styles for accessibility */
 :focus {
   outline: 0;
@@ -374,6 +384,14 @@ input[type="search"]::-webkit-search-decoration {
  * Remove inner padding and border in Firefox 3+.
  */
 
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -388,24 +406,6 @@ input::-moz-focus-inner {
 /**
  * Remove most spacing between table cells.
  */
-
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
 .chromeframe {
   margin: 0.2em 0;

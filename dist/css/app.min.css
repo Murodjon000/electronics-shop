@@ -35,7 +35,7 @@
 }
 
 .bg-custom-gray {
-  background-color: #888888;
+  background-color: #888;
 }
 
 .bg-lightgray {
@@ -456,7 +456,7 @@
 }
 
 .footer__icons:hover {
-  color: #888888;
+  color: #888;
 }
 
 .with-logo {
@@ -534,7 +534,7 @@
 }
 
 .hot__box > span {
-  border: 1px solid #888888;
+  border: 1px solid #888;
   border-radius: 50%;
   padding: 10px;
   color: #d35266;
@@ -719,7 +719,7 @@
   border: 1px solid white;
   margin-right: 1px;
   border-radius: 4px 0 0 4px;
-  color: #888888;
+  color: #888;
   text-indent: 10px;
 }
 
@@ -943,7 +943,7 @@
 }
 
 .text-gray {
-  color: #888888;
+  color: #888;
 }
 
 .text-md {
@@ -1090,6 +1090,16 @@ video {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /* make sure to set some focus styles for accessibility */
@@ -1373,6 +1383,14 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 3+.
  */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -1386,24 +1404,6 @@ input::-moz-focus-inner {
 /**
  * Remove most spacing between table cells.
  */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
