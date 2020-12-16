@@ -2,7 +2,7 @@
 
 # HTML CSS Capstone project
 
-This project has 3 pages, namely: home page, search page, and show page. The website is build using the modern css and html. I have extracted utility classes as much as possible for their reusability purposes.
+This project has 2 pages, namely: home page, search page. The website is build using the modern css and html. I have extracted utility classes as much as possible for their reusability purposes.
 
 The website is fully responsive with the help of three media query breakpoints (the default being the smaller viewport), namely: < 768px, >= 768px, >= 1024px, >= 1280px.
 
@@ -12,7 +12,7 @@ The website is fully responsive with the help of three media query breakpoints (
 
 ### Search page layout
 
-![search layout](./assets/screenshot/screen-search.png)
+![search layout](./assets/screen-search.png)
 
 ## Built With
 
