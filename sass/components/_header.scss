@@ -22,11 +22,13 @@
 
 .links {
   cursor: pointer;
+
   > a {
     text-decoration: none;
     font-family: $header-font-family;
     font-weight: 600;
   }
+
   &:hover {
     color: $dark-pink;
   }
@@ -49,6 +51,7 @@
   border: 1px solid $dark-pink;
   border-radius: 2px;
   font-family: $header-font-family;
+
   &:hover {
     background-color: #d66274;
   }
@@ -62,6 +65,7 @@
   border: none;
   outline: none;
   background-color: $dark-black;
+
   &--primary {
     background-color: $dark-pink;
     border: 1px solid $dark-pink;

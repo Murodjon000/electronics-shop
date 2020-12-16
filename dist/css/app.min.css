@@ -110,8 +110,14 @@
 }
 
 .avatar {
-  width: 32px;
   height: 32px;
+  width: 32px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #383838;
 }
 
 .btn--primary {
@@ -122,12 +128,6 @@
   padding: 7px;
   border-radius: 6px;
   margin-bottom: 10px;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  background-color: #383838;
 }
 
 .spn-btn {
@@ -644,8 +644,8 @@
 }
 
 .search-opt {
-  width: 160px;
   height: 39px;
+  width: 160px;
   border-radius: 6px;
   text-indent: 6px;
   margin-top: 10px;
@@ -685,8 +685,7 @@
 
 .search__box {
   height: 327px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 82, 102, 0.53)), to(rgba(211, 82, 102, 0.93))), url("../../assets/pet.jpg");
-  background: linear-gradient(to bottom, rgba(211, 82, 102, 0.53), rgba(211, 82, 102, 0.93)), url("../../assets/pet.jpg");
+  background-image: url("../../assets/pet-search.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -715,7 +714,7 @@
 
 #apartment-select {
   height: 41px;
-  width: 160px;
+  width: 150px;
   border: 1px solid white;
   margin-right: 1px;
   border-radius: 4px 0 0 4px;
@@ -725,7 +724,7 @@
 
 .search__inp {
   height: 37px;
-  width: 300px;
+  width: 200px;
   border: 1px solid white;
   margin-right: 1px;
   text-indent: 10px;
@@ -882,8 +881,8 @@
 
 .header__burger-bar {
   display: block;
-  width: 1.7em;
   height: 3px;
+  width: 1.7em;
   background-color: #fff;
   margin: 5px 0;
   border-radius: 3px;
@@ -891,8 +890,8 @@
 
 .header__toggle {
   position: absolute;
-  width: 1px;
   height: 1px;
+  width: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
