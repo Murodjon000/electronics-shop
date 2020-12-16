@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "gotham";
-  src: url("../fonts/Gotham-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
 .search__box {
   height: 327px;
   background-position: center;
@@ -15,7 +8,7 @@
       rgba(211, 82, 102, 0.53),
       rgba(211, 82, 102, 0.93)
     ),
-    url("../assets/pet.jpg");
+    url("../../assets/pet.jpg");
 }
 
 .search__info {
@@ -26,7 +19,7 @@
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "gotham";
+  font-family: $header-font-family;
 }
 
 .search__info > p {
@@ -45,7 +38,7 @@
   border: 1px solid white;
   margin-right: 1px;
   border-radius: 4px 0px 0px 4px;
-  color: var(--gray-medium);
+  color: $gray-medium;
   text-indent: 10px;
 }
 
@@ -60,7 +53,7 @@
 .search__button {
   height: 41px;
   width: 100px;
-  border: 1px solid var(--dark-black);
+  border: 1px solid $dark-black;
   border-radius: 0px 4px 4px 0px;
 }
 

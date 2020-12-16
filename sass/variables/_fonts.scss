@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "helveticaneue";
+  src: url("../../assets/fonts/HelveticaNeue.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("../../assets/fonts/HelveticaNeue-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaneue";
+  src: url("../../assets/fonts/HelveticaNeue-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gotham";
+  src: url("../../assets/fonts/Gotham-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+$font-family-default: helveticaneue, system-ui, -apple-system;
+$header-font-family: gotham, system-ui, -apple-system;

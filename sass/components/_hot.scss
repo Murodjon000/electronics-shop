@@ -1,15 +1,8 @@
-@font-face {
-  font-family: "helveticaneue";
-  src: url("../fonts/HelveticaNeue-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
 .hot__box > span {
-  border: 1px solid var(--gray-medium);
+  border: 1px solid $gray-medium;
   border-radius: 50%;
   padding: 10px;
-  color: var(--dark-pink);
+  color: $dark-pink;
   cursor: pointer;
 }
 
@@ -17,12 +10,12 @@
   font-size: 1.3rem;
   font-weight: 600;
   padding-bottom: 10px;
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
 }
 
 .hot__info > p {
   font-size: 1rem;
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
 }
 
 .hot__spn {
@@ -47,7 +40,7 @@
 
 .hot-spn {
   border: none;
-  border-right: 1px solid var(--dark-black);
+  border-right: 1px solid $dark-black;
   height: 40px;
   font-weight: 500;
   border-radius: 4px 0px 0px 4px;
@@ -57,7 +50,7 @@
 .img__bottom {
   bottom: 0;
   right: 0;
-  background-color: var(--dark-black);
+  background-color: $dark-black;
   width: 70px;
   cursor: pointer;
   text-align: center;

@@ -1,19 +1,12 @@
-@font-face {
-  font-family: "helveticaneue";
-  src: url("../fonts/HelveticaNeue.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 .search-card {
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
   border: 1px solid #d4d4d8;
   border-radius: 3px 5px 10px 0;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .card-bot {
-  background-color: var(--dark-pink);
+  background-color: $dark-pink;
   bottom: 0;
   right: 0;
   padding: 7px;
@@ -25,13 +18,13 @@
 
 .search__head {
   font-size: 16px;
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
   margin-left: 8px;
 }
 
 .search__head2 {
   font-size: 16px;
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
 }
 
 .img__search {
@@ -42,7 +35,7 @@
 .room {
   display: flex;
   flex-direction: column;
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
 }
 
 .search-opt {
@@ -64,7 +57,7 @@
 
 .form__wrap {
   padding-top: 36px;
-  font-family: "helveticaneue";
+  font-family: $font-family-default;
 }
 
 .icon-right {

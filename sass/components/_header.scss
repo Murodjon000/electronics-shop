@@ -1,13 +1,6 @@
-@font-face {
-  font-family: "gotham";
-  src: url("../fonts/Gotham-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
 .header__container {
   height: 60px;
-  font-family: "gotham";
+  font-family: $header-font-family;
 }
 
 .icon {
@@ -29,6 +22,8 @@
 
 .links > a {
   text-decoration: none;
+  font-family: $header-font-family;
+  font-weight: 600;
 }
 
 .links {
@@ -36,11 +31,11 @@
 }
 
 .links > a:hover {
-  color: var(--dark-pink);
+  color: $dark-pink;
 }
 
 .links:hover {
-  color: var(--dark-pink);
+  color: $dark-pink;
 }
 
 .icon__link {
@@ -49,12 +44,13 @@
 }
 
 .button > button {
-  background-color: var(--dark-pink);
+  background-color: $dark-pink;
   color: white;
   padding: 4px;
-  border: 1px solid var(--dark-pink);
+  font-weight: 600;
+  border: 1px solid $dark-pink;
   border-radius: 2px;
-  font-family: "gotham";
+  font-family: $header-font-family;
 }
 
 .button > button:hover {
@@ -67,8 +63,8 @@
 }
 
 .btn--primary {
-  background-color: var(--dark-pink);
-  border: 1px solid var(--dark-pink);
+  background-color: $dark-pink;
+  border: 1px solid $dark-pink;
   color: white;
   font-weight: 700;
   padding: 7px;
@@ -79,7 +75,7 @@
 .btn {
   border: none;
   outline: none;
-  background-color: var(--dark-black);
+  background-color: $dark-black;
 }
 
 .spn-btn {

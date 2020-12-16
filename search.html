@@ -8,23 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="./styles/variable.css" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/toggle-nav.css" />
-    <link rel="stylesheet" href="./styles/search.css" />
-    <link rel="stylesheet" href="./styles/search-page.css" />
-    <link rel="stylesheet" href="./styles/hot.css" />
-    <link rel="stylesheet" href="./styles/cards.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/flex.css" />
-    <link rel="stylesheet" href="./styles/grid.css" />
-    <link rel="stylesheet" href="./styles/background.css" />
-    <link rel="stylesheet" href="./styles/color.css" />
-    <link rel="stylesheet" href="./styles/display.css" />
-    <link rel="stylesheet" href="./styles/typo.css" />
-    <link rel="stylesheet" href="./styles/space.css" />
-    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./dist/css/app.min.css" />
   </head>
   <body>
     <header class="bg-custom-dark">
@@ -191,7 +175,7 @@
             148 results for pet types in the United States
           </h2>
           <div class="md:grid md:grid-cols-2 lg:hidden">
-            <div class="flex flex-column mx-auto px-4 pt-5">
+            <div class="flex flex-column mx-auto px-4 pt-5 lg:hidden">
               <div class="search-card flex justify-center flex-column mx-auto">
                 <div class="relative">
                   <a href="#">
@@ -241,7 +225,7 @@
               </div>
             </div>
 
-            <div class="flex flex-column mx-auto px-4 pt-5">
+            <div class="flex flex-column mx-auto px-4 pt-5 lg:hidden">
               <div
                 class="search-card flex justify-center flex-column mx-auto my-3"
               >
@@ -293,7 +277,7 @@
               </div>
             </div>
 
-            <div class="flex flex-column mx-auto px-4 pt-5">
+            <div class="flex flex-column mx-auto px-4 pt-5 lg:hidden">
               <div
                 class="search-card flex justify-center flex-column mx-auto my-3"
               >
@@ -345,7 +329,7 @@
               </div>
             </div>
 
-            <div class="flex flex-column mx-auto px-4 pt-5">
+            <div class="flex flex-column mx-auto px-4 pt-5 lg:hidden">
               <div
                 class="search-card flex justify-center flex-column mx-auto my-3"
               >
@@ -395,7 +379,7 @@
               </div>
             </div>
 
-            <div class="flex flex-column mx-auto px-4 pt-5">
+            <div class="flex flex-column mx-auto px-4 pt-5 lg:hidden">
               <div
                 class="search-card flex justify-center flex-column mx-auto my-3"
               >
@@ -447,7 +431,7 @@
               </div>
             </div>
 
-            <div class="flex flex-column mx-auto px-4 pt-5">
+            <div class="flex flex-column mx-auto px-4 pt-5 lg:hidden">
               <div
                 class="search-card flex justify-center flex-column mx-auto my-3"
               >
@@ -497,6 +481,24 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-beetwen align-center px-4 mx-auto pb-5 pt-5 lg:hidden"
+          >
+            <span class="hidden md:flex"> Showing 1 to 4 of 45 results </span>
+            <div class="flex align-center md:justify-center">
+              <span class="span__bottom text-center"
+                ><i class="fas fa-chevron-left"></i
+              ></span>
+              <span class="span__bottom text-center">1</span>
+              <span class="span__bottom text-center">2</span>
+              <span class="span__bottom z-ind text-center">...</span>
+              <span class="span__bottom text-center">8</span>
+              <span class="span__bottom text-center">9</span>
+              <span class="span__bottom text-center">
+                <i class="fas fa-chevron-right"></i
+              ></span>
             </div>
           </div>
         </div>
