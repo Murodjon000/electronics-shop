@@ -1,0 +1,8 @@
+@mixin rect($height: 32px, $width: 32px) {
+  height: $height;
+  width: $width;
+}
+
+@mixin linear-gradient($degree, $color-1, $color-2) {
+  background: linear-gradient($degree, $color-1, rgba(211, 82, 102, 0.93));
+}

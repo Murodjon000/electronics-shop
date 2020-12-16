@@ -9,8 +9,7 @@
 
 .header__burger-bar {
   display: block;
-  width: 1.7em;
-  height: 3px;
+  @include rect(3px, 1.7em);
   background-color: #fff;
   margin: 5px 0;
   border-radius: 3px;
@@ -18,8 +17,7 @@
 
 .header__toggle {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  @include rect(1px, 1px);
   padding: 0;
   margin: -1px;
   overflow: hidden;

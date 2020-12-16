@@ -72,21 +72,21 @@
   padding-right: 8px;
 }
 
+.links {
+  cursor: pointer;
+}
+
 .links > a {
   text-decoration: none;
   font-family: gotham, system-ui, -apple-system;
   font-weight: 600;
 }
 
-.links {
-  cursor: pointer;
-}
-
-.links > a:hover {
+.links:hover {
   color: #d35266;
 }
 
-.links:hover {
+.links > a:hover {
   color: #d35266;
 }
 

@@ -1,13 +1,13 @@
-.bg-custom-dark {
-  background-color: $dark-black;
-}
+$background: (
+  dark: $dark-black,
+  pink: $dark-pink,
+  gray: $gray-medium,
+);
 
-.bg-custom-pink {
-  background-color: $dark-pink;
-}
-
-.bg-custom-gray {
-  background-color: $gray-medium;
+@each $prop, $var in $background {
+  .bg-custom-#{$prop} {
+    background-color: $var;
+  }
 }
 
 .bg-lightgray {

@@ -20,11 +20,10 @@
   font-size: 16px;
   font-family: $font-family-default;
   margin-left: 8px;
-}
-
-.search__head2 {
-  font-size: 16px;
-  font-family: $font-family-default;
+  &2 {
+    font-size: 16px;
+    font-family: $font-family-default;
+  }
 }
 
 .img__search {
@@ -39,8 +38,7 @@
 }
 
 .search-opt {
-  width: 160px;
-  height: 39px;
+  @include rect(39px, 160px);
   border-radius: 6px;
   text-indent: 6px;
   margin-top: 10px;

@@ -9,32 +9,30 @@
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
-}
 
-.icon > a {
-  text-decoration: none;
-}
+  > a {
+    text-decoration: none;
+  }
 
-.icon-head {
-  font-size: 2rem;
-  padding-right: 8px;
-}
-
-.links > a {
-  text-decoration: none;
-  font-family: $header-font-family;
-  font-weight: 600;
+  &-head {
+    font-size: 2rem;
+    padding-right: 8px;
+  }
 }
 
 .links {
   cursor: pointer;
+  > a {
+    text-decoration: none;
+    font-family: $header-font-family;
+    font-weight: 600;
+  }
+  &:hover {
+    color: $dark-pink;
+  }
 }
 
 .links > a:hover {
-  color: $dark-pink;
-}
-
-.links:hover {
   color: $dark-pink;
 }
 
@@ -51,31 +49,28 @@
   border: 1px solid $dark-pink;
   border-radius: 2px;
   font-family: $header-font-family;
-}
-
-.button > button:hover {
-  background-color: #d66274;
+  &:hover {
+    background-color: #d66274;
+  }
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
-}
-
-.btn--primary {
-  background-color: $dark-pink;
-  border: 1px solid $dark-pink;
-  color: white;
-  font-weight: 700;
-  padding: 7px;
-  border-radius: 6px;
-  margin-bottom: 10px;
+  @include rect;
 }
 
 .btn {
   border: none;
   outline: none;
   background-color: $dark-black;
+  &--primary {
+    background-color: $dark-pink;
+    border: 1px solid $dark-pink;
+    color: white;
+    font-weight: 700;
+    padding: 7px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
 }
 
 .spn-btn {
