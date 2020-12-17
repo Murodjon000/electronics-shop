@@ -25,39 +25,69 @@
 
 .search__input {
   margin-top: -15px;
-  width: 100%;
+  max-width: 100%;
 }
 
 #apartment-select {
-  @include rect(41px, 150px);
-
   border: 1px solid white;
   margin-right: 1px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 6px;
   color: $gray-medium;
+  background-color: white;
   text-indent: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .search__inp {
-  @include rect(37px, 200px);
-
   border: 1px solid white;
-  margin-right: 1px;
   text-indent: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .search__button {
-  @include rect(41px, 100px);
-
   border: 1px solid $dark-black;
-  border-radius: 0 4px 4px 0;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
+
+@media only screen and (min-width: 768px) {
+  .search__input {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #apartment-select {
+    border-radius: 4px 0 0 4px;
+    width: 170px;
+  }
+
+  .search__inp {
+    border-radius: 0;
+    width: 220px;
+    margin-right: 1px;
+  }
+
+  .search__button {
+    border-radius: 0 4px 4px 0;
+    width: 100px;
+    margin-right: 1px;
+  }
+}
+
+/*
 
 @media only screen and (max-width: 768px) {
   .md\:column {
     flex-direction: column;
   }
-
+  border-radius: 0 4px 4px 0;
   .search__input {
     display: flex;
     justify-content: center;
@@ -70,13 +100,16 @@
 
   #apartment-select,
   .search__inp {
-    width: 400px;
+    max-width: 400px;
     border-radius: 6px;
     margin-bottom: 10px;
   }
 
   .search__button {
-    width: 408px;
+    max-width: 408px;
     border-radius: 6px;
   }
 }
+
+
+*/

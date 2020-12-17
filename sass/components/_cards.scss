@@ -85,3 +85,26 @@
     justify-content: center;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .card__title > p {
+    display: none;
+  }
+
+  .card__box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 468px) {
+  .card__box {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .search__info > p {
+    display: none;
+  }
+}
