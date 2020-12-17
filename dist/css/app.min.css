@@ -838,38 +838,6 @@
   }
 }
 
-/*
-
-@media only screen and (max-width: 768px) {
-  .md\:column {
-    flex-direction: column;
-  }
-  border-radius: 0 4px 4px 0;
-  .search__input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .search__info {
-    height: 55%;
-  }
-
-  #apartment-select,
-  .search__inp {
-    max-width: 400px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-  }
-
-  .search__button {
-    max-width: 408px;
-    border-radius: 6px;
-  }
-}
-
-
-*/
 .px-1 {
   padding-left: 4px;
   padding-right: 4px;
