@@ -22,7 +22,7 @@ The website is fully responsive with the help of three media query breakpoints (
 
 ## Live Demo
 
-[Live demo link](https://murodjon000.github.io/electronics-shop/)
+[Live demo link](https://pet-shop-murod.netlify.app/)
 
 ## Getting Started
 
