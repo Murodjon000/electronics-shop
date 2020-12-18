@@ -100,6 +100,7 @@
 @media only screen and (min-width: 468px) {
   .card__box {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    -ms-grid-columns: (minmax(0, 1fr));
   }
 }
 
