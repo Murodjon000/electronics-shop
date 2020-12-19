@@ -1,17 +1,14 @@
-.hidden {
-  display: none;
-}
+$disp: (
+  hidden: none,
+  block: none,
+  flex: flex,
+  grid: grid,
+);
 
-.block {
-  display: block;
-}
-
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
+@each $prop, $var in $disp {
+  .#{$prop} {
+    display: $var;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -41,20 +38,10 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:flex {
-    display: flex;
-  }
-
-  .lg\:grid {
-    display: grid;
-  }
-
-  .lg\:hidden {
-    display: none;
+@each $prop, $var in $disp {
+  @media only screen and (min-width: 1024px) {
+    .lg\:#{$prop} {
+      display: $var;
+    }
   }
 }
