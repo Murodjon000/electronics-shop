@@ -1,0 +1,51 @@
+.show__box {
+  font-family: $font-family-default;
+}
+
+.border-show {
+  border-radius: 10px;
+}
+
+.show__text {
+  align-items: flex-start;
+}
+
+.text-md1 {
+  font-size: 2rem;
+}
+
+.text-show-img {
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, 50%);
+  z-index: 50;
+  font-weight: 600;
+}
+
+.text-show-img1 {
+  color: white;
+  font-size: 30px;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, 50%);
+  z-index: 50;
+  font-weight: 600;
+}
+
+.img-overlay {
+  background-color: $dark-black;
+  border-radius: 10px;
+  z-index: 10;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.m-width-show {
+  max-width: 60rem;
+}

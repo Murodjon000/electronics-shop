@@ -32,6 +32,10 @@ $disp: (
     display: none;
   }
 
+  .md\:ml-4 {
+    margin-left: 16px;
+  }
+
   .overflow-x {
     overflow-x: auto;
     column-gap: 24px;
