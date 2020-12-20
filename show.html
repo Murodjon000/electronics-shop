@@ -140,11 +140,15 @@
         class="m-width-show mx-auto flex align-center gap-5 md:grid md:grid-cols-2 flex-column px-4"
       >
         <div class="mt-5 md:col-md-span-1">
-          <img src="./assets/dog1.jpg" alt="dog" class="w-100 border-show" />
+          <img
+            src="./assets/dog1.jpg"
+            alt="dog"
+            class="w-100 border-show md:h-img"
+          />
         </div>
         <div>
-          <div class="grid grid-cols-1 gap-5 my-3 md:col-md-span-1 md:ml-4">
-            <div class="text-gray-500 flex align-center">
+          <div class="grid grid-cols-2 gap-5 my-3 md:col-md-span-1 md:ml-4">
+            <div class="text-gray-500 flex align-center col-span-1">
               <i class="fas fa-wallet text-md1"></i>
               <div class="flex flex-column align-center show__text ml-2">
                 <span class="text-black font-600">Buy:</span>
@@ -152,7 +156,7 @@
               </div>
             </div>
 
-            <div class="text-gray-500 flex align-center">
+            <div class="text-gray-500 flex align-center col-span-1">
               <i class="fas fa-clinic-medical text-md1"></i>
               <div class="flex flex-column align-center show__text ml-2">
                 <span class="text-black font-600">Health:</span>
@@ -160,7 +164,7 @@
               </div>
             </div>
 
-            <div class="text-gray-500 flex align-center">
+            <div class="text-gray-500 flex align-center col-span-1">
               <i class="far fa-calendar-alt text-md1"></i>
               <div class="flex flex-column align-center show__text px-1 ml-2">
                 <span class="text-black font-600">Age:</span>
@@ -168,29 +172,31 @@
               </div>
             </div>
 
-            <div class="text-gray-500 flex align-center">
+            <div class="text-gray-500 flex align-center col-span-1">
               <i class="fas fa-shipping-fast text-md1"></i>
               <div class="flex flex-column align-center show__text ml-2">
                 <span class="text-black font-600">Shipping:</span>
                 <span class="text-gray-700">1 day</span>
               </div>
             </div>
-            <div class="col-span-1 relative">
-              <div class="img-overlay"></div>
-              <img src="./assets/bird.jpg" alt="" class="w-100 border-show" />
-              <span class="absolute text-show-img">Photos</span>
-            </div>
-            <div class="col-span-1 relative">
-              <div class="img-overlay"></div>
-              <img src="./assets/dog2.jpg" alt="" class="w-100 border-show" />
-              <span class="absolute text-show-img">Videos</span>
+
+            <div class="col-span-2 text__info__dog">
+              <h1 class="text-md pb-2 text-gray">Description</h1>
+              <p class="text-gray-700">
+                Hi! I have two beautiful teacup pomeranian puppies looking for
+                their forever homes! I have one boy and one girl. Both have
+                their first round of shots and deworming. They are two lovely
+                and playful puppies who would definitley light up any home
+                during the holidays! Please message me for further information.
+                I want to specify that for the wellbeing of the puppies.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="m-width-show mx-auto py-4 px-4">
-        <h1 class="py-2 text-2xl">Find your address</h1>
+        <h1 class="py-2 text-2xl">Pet Location</h1>
 
         <iframe
           height="304"

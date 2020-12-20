@@ -10,6 +10,10 @@
   align-items: flex-start;
 }
 
+.h-img {
+  height: 320px;
+}
+
 .text-md1 {
   font-size: 2rem;
 }
@@ -38,4 +42,9 @@
 
 .m-width-show {
   max-width: 60rem;
+}
+
+.text__info__dog > p {
+  font-size: 17px;
+  font-family: $font-family-default;
 }

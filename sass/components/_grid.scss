@@ -14,6 +14,10 @@
   grid-column: span 1 / span 1;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   -ms-grid-columns: (minmax(0, 1fr));
