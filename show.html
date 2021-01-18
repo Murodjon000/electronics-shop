@@ -1,343 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Petto</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./dist/css/app.min.css" />
-  </head>
-  <body>
-    <header class="bg-custom-dark">
-      <nav
-        class="flex justify-beetwen align-center header__container px-2 relative"
-      >
-        <div class="flex md:justify-between">
-          <div class="icon flex align-center md:px-3 lg:px-6">
-            <a href="#">
-              <i class="text-pink icon-head fab fa-battle-net"></i
-            ></a>
 
-            <a href="#" class="text-white uppercase">Petto</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="./dist/css/app.min.css" />
+</head>
+
+<body>
+  <header class="bg-custom-dark">
+    <nav class="flex justify-beetwen align-center header__container px-2 relative">
+      <div class="flex md:justify-between">
+        <div class="icon flex align-center md:px-3 lg:px-6">
+          <a href="#">
+            <i class="text-pink icon-head fab fa-battle-net"></i></a>
+
+          <a href="#" class="text-white uppercase">Petto</a>
+        </div>
+        <div class="md:flex align-center md:px-3 lg:px-6 hidden">
+          <div class="links md:px-3 lg:px-6 text-gray md:px-2">
+            <i class="icon__link sm:icon__link-sm fas fa-home"></i>
+            <a href="./index.html" class="text-gray">Home</a>
           </div>
-          <div class="md:flex align-center md:px-3 lg:px-6 hidden">
-            <div class="links md:px-3 lg:px-6 text-gray md:px-2">
-              <i class="icon__link sm:icon__link-sm fas fa-home"></i>
-              <a href="./index.html" class="text-gray">Home</a>
-            </div>
-            <div class="links md:px-3 lg:px-6 text-gray md:px-2">
-              <i class="icon__link sm:icon__link-sm fas fa-border-style"></i>
-              <a href="./search.html" class="text-gray">Collections</a>
-            </div>
+          <div class="links md:px-3 lg:px-6 text-gray md:px-2">
+            <i class="icon__link sm:icon__link-sm fas fa-border-style"></i>
+            <a href="./search.html" class="text-gray">Collections</a>
+          </div>
 
-            <div class="links md:px-3 lg:px-6 text-pink md:px-2">
-              <i class="icon__link sm:icon__link-sm fas fa-shopping-cart"></i>
-              <a href="#" class="text-pink">Purchase List</a>
-            </div>
-            <div class="button md:px-3 md:block lg:px-6 hidden">
-              <button type="button">Post An Add</button>
-            </div>
+          <div class="links md:px-3 lg:px-6 text-pink md:px-2">
+            <i class="icon__link sm:icon__link-sm fas fa-shopping-cart"></i>
+            <a href="./show.html" class="text-pink">Purchase List</a>
+          </div>
+          <div class="button md:px-3 md:block lg:px-6 hidden">
+            <button type="button">Post An Add</button>
           </div>
         </div>
-        <div class="align-center bg-custom-dark lg:flex">
-          <button type="button" class="btn relative spn-avat">
-            <i class="fas fa-comment-alt text-gray"></i>
-            <span class="text-white bg-custom-pink spn-btn">2</span>
+      </div>
+      <div class="align-center bg-custom-dark lg:flex">
+        <button type="button" class="btn relative spn-avat">
+          <i class="fas fa-comment-alt text-gray"></i>
+          <span class="text-white bg-custom-pink spn-btn">2</span>
+        </button>
+        <button type="button" class="flex btn ml-5 btn align-center">
+          <img class="avatar avatar--rounded spn-avat-img" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+          <span class="text-white spn-avat px-2 font-600 align-center lg:flex">
+            John Doe
+            <i class="fas fa-chevron-down px-1 text-sm text-gray"></i>
+          </span>
+        </button>
+      </div>
+      <div class="flex align-center mob-box px-2 justify-center md:hidden">
+        <input type="checkbox" id="toggle" class="header__toggle" />
+        <label for="toggle" class="header__burger">
+          <span class="header__burger-bar"></span>
+          <span class="header__burger-bar"></span>
+          <span class="header__burger-bar"></span>
+        </label>
+        <div class="mobile-nav bg-custom-dark pb-6 pt-3 md:hidden px-4 sm:px-6">
+          <nav>
+            <a href="./index.html" class="flex align-center hover:text-gray-400 text-gray-500 text-none py-2">
+              <i class="fas fa-home text-2xl"></i>
+              <span class="text-nav ml-2">Home</span>
+            </a>
+            <a href="./search.html" class="flex align-center text-none text-gray-500 hover:text-gray-400 py-2">
+              <i class="fas fa-border-style text-2xl"></i>
+              <span class="text-nav ml-2">Collection</span>
+            </a>
+            <a href="./show.html" class="flex align-center text-pink py-2 text-none">
+              <i class="fas fa-shopping-cart text-2xl"></i>
+              <span class="text-nav ml-2">Purchase list</span>
+            </a>
+          </nav>
+          <hr class="my-4 border-bottom" />
+          <button type="button" class="flex btn align-center">
+            <img class="avatar avatar--rounded" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+            <span class="text-white ml-2 font-600"> John Doe </span>
           </button>
-          <button type="button" class="flex btn ml-5 btn align-center">
-            <img
-              class="avatar avatar--rounded spn-avat-img"
-              src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <span
-              class="text-white spn-avat px-2 font-600 align-center lg:flex"
-            >
-              John Doe
-              <i class="fas fa-chevron-down px-1 text-sm text-gray"></i>
-            </span>
-          </button>
-        </div>
-        <div class="flex align-center mob-box px-2 justify-center md:hidden">
-          <input type="checkbox" id="toggle" class="header__toggle" />
-          <label for="toggle" class="header__burger">
-            <span class="header__burger-bar"></span>
-            <span class="header__burger-bar"></span>
-            <span class="header__burger-bar"></span>
-          </label>
-          <div
-            class="mobile-nav bg-custom-dark pb-6 pt-3 md:hidden px-4 sm:px-6"
-          >
-            <nav>
-              <a
-                href="./index.html"
-                class="flex align-center hover:text-gray-400 text-gray-500 text-none py-2"
-              >
-                <i class="fas fa-home text-2xl"></i>
-                <span class="text-nav ml-2">Home</span>
-              </a>
-              <a
-                href="./search.html"
-                class="flex align-center text-none text-gray-500 hover:text-gray-400 py-2"
-              >
-                <i class="fas fa-border-style text-2xl"></i>
-                <span class="text-nav ml-2">Collection</span>
-              </a>
-              <a
-                href="./show.html"
-                class="flex align-center text-pink py-2 text-none"
-              >
-                <i class="fas fa-shopping-cart text-2xl"></i>
-                <span class="text-nav ml-2">Purchase list</span>
-              </a>
-            </nav>
-            <hr class="my-4 border-bottom" />
-            <button type="button" class="flex btn align-center">
-              <img
-                class="avatar avatar--rounded"
-                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
-              <span class="text-white ml-2 font-600"> John Doe </span>
+          <nav class="mt-2">
+            <a href="#" class="flex align-center text-gray-500 hover:text-gray-400 py-2">
+              <i class="far fa-user-circle text-2xl"></i>
+              <span class="text-nav font-medium ml-2">Your profile</span>
+            </a>
+            <a href="#" class="flex align-center text-gray-500 hover:text-gray-400 py-2">
+              <i class="fas fa-user-cog text-2xl"></i>
+              <span class="text-nav font-medium ml-2">Settings</span>
+            </a>
+            <a href="#" class="flex align-center text-gray-500 hover:text-gray-400 py-2">
+              <i class="fas fa-sign-out-alt text-2xl"></i>
+              <span class="text-nav font-medium ml-2">Logout</span>
+            </a>
+          </nav>
+          <div>
+            <button type="button" class="hover:bg-light btn--primary uppercase text-xs">
+              Post an ad
             </button>
-            <nav class="mt-2">
-              <a
-                href="#"
-                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
-              >
-                <i class="far fa-user-circle text-2xl"></i>
-                <span class="text-nav font-medium ml-2">Your profile</span>
-              </a>
-              <a
-                href="#"
-                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
-              >
-                <i class="fas fa-user-cog text-2xl"></i>
-                <span class="text-nav font-medium ml-2">Settings</span>
-              </a>
-              <a
-                href="#"
-                class="flex align-center text-gray-500 hover:text-gray-400 py-2"
-              >
-                <i class="fas fa-sign-out-alt text-2xl"></i>
-                <span class="text-nav font-medium ml-2">Logout</span>
-              </a>
-            </nav>
-            <div>
-              <button
-                type="button"
-                class="hover:bg-light btn--primary uppercase text-xs"
-              >
-                Post an ad
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="bg-lightgray show__box">
-      <div
-        class="m-width-show mx-auto flex align-center gap-5 md:grid md:grid-cols-2 flex-column px-4"
-      >
-        <div class="mt-5 md:col-md-span-1">
-          <img
-            src="./assets/dog1.jpg"
-            alt="dog"
-            class="w-100 border-show md:h-img"
-          />
-        </div>
-        <div>
-          <div class="grid grid-cols-2 gap-5 my-3 md:col-md-span-1 md:ml-4">
-            <div class="text-gray-500 flex align-center col-span-1">
-              <i class="fas fa-wallet text-md1"></i>
-              <div class="flex flex-column align-center show__text ml-2">
-                <span class="text-black font-600">Buy:</span>
-                <span class="text-gray-700">1,900$</span>
-              </div>
-            </div>
-
-            <div class="text-gray-500 flex align-center col-span-1">
-              <i class="fas fa-clinic-medical text-md1"></i>
-              <div class="flex flex-column align-center show__text ml-2">
-                <span class="text-black font-600">Health:</span>
-                <span class="text-gray-700">Healthy</span>
-              </div>
-            </div>
-
-            <div class="text-gray-500 flex align-center col-span-1">
-              <i class="far fa-calendar-alt text-md1"></i>
-              <div class="flex flex-column align-center show__text px-1 ml-2">
-                <span class="text-black font-600">Age:</span>
-                <span class="text-gray-700">8 Weeks</span>
-              </div>
-            </div>
-
-            <div class="text-gray-500 flex align-center col-span-1">
-              <i class="fas fa-shipping-fast text-md1"></i>
-              <div class="flex flex-column align-center show__text ml-2">
-                <span class="text-black font-600">Shipping:</span>
-                <span class="text-gray-700">1 day</span>
-              </div>
-            </div>
-
-            <div class="col-span-2 text__info__dog">
-              <h1 class="text-md pb-2 text-gray">Description</h1>
-              <p class="text-gray-700">
-                Hi! I have two beautiful teacup pomeranian puppies looking for
-                their forever homes! I have one boy and one girl. Both have
-                their first round of shots and deworming. They are two lovely
-                and playful puppies who would definitley light up any home
-                during the holidays! Please message me for further information.
-                I want to specify that for the wellbeing of the puppies.
-              </p>
-            </div>
           </div>
         </div>
       </div>
-
-      <div class="m-width-show mx-auto py-4 px-4">
-        <h1 class="py-2 text-2xl">Pet Location</h1>
-
-        <iframe
-          height="304"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4152327951642!2d-73.99952068509498!3d40.73088784439762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington%20Square%20Park!5e0!3m2!1sen!2s!4v1608392384007!5m2!1sen!2s"
-          class="w-100 border-show"
-        ></iframe>
+    </nav>
+  </header>
+  <main class="bg-lightgray show__box">
+    <div class="m-width-show mx-auto flex align-center gap-5 md:grid md:grid-cols-2 flex-column px-4">
+      <div class="mt-5 md:col-md-span-1">
+        <img src="./assets/dog1.jpg" alt="dog" class="w-100 border-show md:h-img" />
       </div>
-
-      <div class="m-width-show mx-auto py-4 px-4">
-        <form></form>
-      </div>
-    </main>
-    <footer class="footer__box bg-white px-2">
-      <div class="mx-auto m-width grid lg:grid-cols-4">
-        <div class="footer__logo flex flex-column py-4 px-2 lg:col-lg-span-1">
-          <div class="flex align-center">
-            <a href="#">
-              <i class="text-pink icon-head fab fa-battle-net"></i
-            ></a>
-
-            <a href="#" class="text-pink uppercase text-none text-md font-600"
-              >Petto</a
-            >
+      <div>
+        <div class="grid grid-cols-2 gap-5 my-3 md:col-md-span-1 md:ml-4">
+          <div class="text-gray-500 flex align-center col-span-1">
+            <i class="fas fa-wallet text-md1"></i>
+            <div class="flex flex-column align-center show__text ml-2">
+              <span class="text-black font-600">Buy:</span>
+              <span class="text-gray-700">1,900$</span>
+            </div>
           </div>
-          <div class="">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis cras
-              consequat ornare mi. Nulla lectus mauris bibendum commodo.
+
+          <div class="text-gray-500 flex align-center col-span-1">
+            <i class="fas fa-clinic-medical text-md1"></i>
+            <div class="flex flex-column align-center show__text ml-2">
+              <span class="text-black font-600">Health:</span>
+              <span class="text-gray-700">Healthy</span>
+            </div>
+          </div>
+
+          <div class="text-gray-500 flex align-center col-span-1">
+            <i class="far fa-calendar-alt text-md1"></i>
+            <div class="flex flex-column align-center show__text px-1 ml-2">
+              <span class="text-black font-600">Age:</span>
+              <span class="text-gray-700">8 Weeks</span>
+            </div>
+          </div>
+
+          <div class="text-gray-500 flex align-center col-span-1">
+            <i class="fas fa-shipping-fast text-md1"></i>
+            <div class="flex flex-column align-center show__text ml-2">
+              <span class="text-black font-600">Shipping:</span>
+              <span class="text-gray-700">1 day</span>
+            </div>
+          </div>
+
+          <div class="col-span-2 text__info__dog">
+            <h1 class="text-md pb-2 text-gray">Description</h1>
+            <p class="text-gray-700">
+              Hi! I have two beautiful teacup pomeranian puppies looking for
+              their forever homes! I have one boy and one girl. Both have
+              their first round of shots and deworming. They are two lovely
+              and playful puppies who would definitley light up any home
+              during the holidays! Please message me for further information.
+              I want to specify that for the wellbeing of the puppies.
             </p>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 py-4 lg:col-lg-span-3">
-          <div class="flex flex-column px-2">
-            <h2 class="text-pink font-600 text-md pb-5 uppercase">Places</h2>
-            <div class="flex flex-column">
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >California</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >San Francisco</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >Texas</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >Dallas</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >New York</a
-              >
-            </div>
+    <div class="m-width-show mx-auto py-4 px-4">
+      <h1 class="py-2 text-2xl">Pet Location</h1>
+
+      <iframe height="304" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.4152327951642!2d-73.99952068509498!3d40.73088784439762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25990e23d7e8d%3A0xfa615edfd1b67e18!2sWashington%20Square%20Park!5e0!3m2!1sen!2s!4v1608392384007!5m2!1sen!2s" class="w-100 border-show"></iframe>
+    </div>
+
+    <div class="m-width-show mx-auto py-4 px-4">
+      <form></form>
+    </div>
+  </main>
+  <footer class="footer__box bg-white px-2">
+    <div class="mx-auto m-width grid lg:grid-cols-4">
+      <div class="footer__logo flex flex-column py-4 px-2 lg:col-lg-span-1">
+        <div class="flex align-center">
+          <a href="#">
+            <i class="text-pink icon-head fab fa-battle-net"></i></a>
+
+          <a href="#" class="text-pink uppercase text-none text-md font-600">Petto</a>
+        </div>
+        <div class="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis cras
+            consequat ornare mi. Nulla lectus mauris bibendum commodo.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 py-4 lg:col-lg-span-3">
+        <div class="flex flex-column px-2">
+          <h2 class="text-pink font-600 text-md pb-5 uppercase">Places</h2>
+          <div class="flex flex-column">
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">California</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">San Francisco</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">Texas</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">Dallas</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">New York</a>
           </div>
+        </div>
 
-          <div class="flex flex-column text-md px-2">
-            <h2 class="text-pink font-600 pb-5 uppercase">Pages</h2>
-            <div class="flex flex-column">
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >Home</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >About Us</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >Contact</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >Terms & Conditions</a
-              >
-              <a
-                href="#"
-                class="text-none text-2xl text-black pb-2 hover:text-pink"
-                >Privacy Policy</a
-              >
-            </div>
+        <div class="flex flex-column text-md px-2">
+          <h2 class="text-pink font-600 pb-5 uppercase">Pages</h2>
+          <div class="flex flex-column">
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">Home</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">About Us</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">Contact</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">Terms & Conditions</a>
+            <a href="#" class="text-none text-2xl text-black pb-2 hover:text-pink">Privacy Policy</a>
           </div>
+        </div>
 
-          <div class="flex flex-column px-2 soc-icon">
-            <div class="flex">
-              <div class="flex align-center flex-column pb-2">
-                <div class="flex align-center pb-2">
-                  <h1 class="uppercase text-pink">Country</h1>
-                  <button class="foot__btn1">Uzbekistan</button>
-                </div>
-                <div class="flex align-center pb-2">
-                  <h1 class="uppercase text-pink">Language</h1>
-                  <button class="foot__btn">Uzbek</button>
-                </div>
-                <div class="flex align-center pb-2">
-                  <h1 class="uppercase text-pink">Currency</h1>
-                  <button class="foot__btn">Uz Sum</button>
-                </div>
+        <div class="flex flex-column px-2 soc-icon">
+          <div class="flex">
+            <div class="flex align-center flex-column pb-2">
+              <div class="flex align-center pb-2">
+                <h1 class="uppercase text-pink">Country</h1>
+                <button class="foot__btn1">Uzbekistan</button>
+              </div>
+              <div class="flex align-center pb-2">
+                <h1 class="uppercase text-pink">Language</h1>
+                <button class="foot__btn">Uzbek</button>
+              </div>
+              <div class="flex align-center pb-2">
+                <h1 class="uppercase text-pink">Currency</h1>
+                <button class="foot__btn">Uz Sum</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="mx-auto m-width">
-        <hr class="border-foot" />
-        <div class="flex justify-beetwen align-center py-4 text-foot text-sm">
-          <div>
-            <p>&#169; Copyright Petto. All rights reserved.</p>
-          </div>
+    </div>
+    <div class="mx-auto m-width">
+      <hr class="border-foot" />
+      <div class="flex justify-beetwen align-center py-4 text-foot text-sm">
+        <div>
+          <p>&#169; Copyright Petto. All rights reserved.</p>
+        </div>
 
-          <div class="flex align-center mt-3">
-            <a href="#" class="footer__icons"
-              ><i class="fab fa-facebook-square px-4"></i
-            ></a>
-            <a href="#" class="footer__icons"
-              ><i class="fab fa-twitter-square px-4"></i
-            ></a>
-            <a href="#" class="footer__icons"
-              ><i class="fab fa-youtube px-4"></i
-            ></a>
-            <a href="#" class="footer__icons"
-              ><i class="fab fa-instagram pl-2"></i
-            ></a>
-          </div>
+        <div class="flex align-center mt-3">
+          <a href="#" class="footer__icons"><i class="fab fa-facebook-square px-4"></i></a>
+          <a href="#" class="footer__icons"><i class="fab fa-twitter-square px-4"></i></a>
+          <a href="#" class="footer__icons"><i class="fab fa-youtube px-4"></i></a>
+          <a href="#" class="footer__icons"><i class="fab fa-instagram pl-2"></i></a>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
